@@ -1,0 +1,75 @@
+name: aura
+description: "Auto Reminder Application AURA"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # 📅 Waktu & notifikasi
+  timezone: ^0.9.4
+  flutter_local_notifications: ^17.2.1
+  intl: ^0.19.0
+
+  # 🔐 Izin & penyimpanan lokal
+  permission_handler: ^11.0.1
+  shared_preferences: ^2.2.2
+
+  # 🗃️ Database lokal SQLite
+  sqflite: ^2.3.0
+  path: ^1.8.3
+  path_provider: ^2.1.2
+
+  # 🌐 Buka link YouTube / Zoom
+  url_launcher: ^6.3.0
+
+  # 🧩 Icon iOS / Material
+  cupertino_icons: ^1.0.2
+
+  # 🚀 Icon builder
+  flutter_launcher_icons: ^0.14.4
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.1
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/fonts/
+    - assets/logo_aura.png
+    - assets/profile.png  # Tambahin biar gak error nanti
+
+  fonts:
+    - family: Cinzel
+      fonts:
+        - asset: assets/fonts/Cinzel-Regular.ttf
+        - asset: assets/fonts/Cinzel-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Cinzel-SemiBold.ttf
+          weight: 600
+
+    - family: Montserrat
+      fonts:
+        - asset: assets/fonts/Montserrat-Regular.ttf
+        - asset: assets/fonts/Montserrat-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Montserrat-SemiBold.ttf
+          weight: 600
+
+# ======================================
+# 🔹 Konfigurasi Icon Aplikasi (Flutter Launcher Icons)
+# ======================================
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/logo_aura.png"
+  adaptive_icon_background: "#0D1B2A"  # biru gelap khas AURA
+  adaptive_icon_foreground: "assets/logo_aura.png"
+  min_sdk_android: 21
