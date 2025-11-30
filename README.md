@@ -29,9 +29,6 @@ Tujuan AURA: bikin pengguna **lebih teratur**, **gak lupa jadwal**, dan tetap **
 
 # 🛠 Cara Clone & Menjalankan AURA dari Nol (Langkah Demi Langkah)
 
-Bagian ini dibuat supaya **orang awam pun bisa ikuti**.
-Ikuti langkahnya **berurutan** ya 👇
-
 ---
 
 ## 1️⃣ Install Git
