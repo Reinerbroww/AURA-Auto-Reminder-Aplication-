@@ -225,5 +225,5 @@ Kalau error terkait Gradle/SDK, pastikan:
 
 **Support & Kontributor:**
 
-* Hadinata Yusuf Pratama
+* HADYNATA YUSUF PRATAMA 
 * Melin Oktaviani
