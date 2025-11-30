@@ -1,102 +1,132 @@
-# 🌙 AURA — Auto Reminder Application  
-Aplikasi pengingat otomatis berbasis Flutter yang dirancang untuk membantu pengguna mengelola jadwal harian, pengingat penting, hingga aktivitas produktivitas dengan cepat, mudah, dan efisien.
+AURA Auto Reminder Application
 
-AURA dibangun dengan tujuan memberikan pengalaman pengguna yang nyaman, tampilan elegan, serta sistem notifikasi yang stabil dan dapat diandalkan.
+🌙 Apa itu AURA?
 
----
+AURA (Auto Reminder Application) adalah aplikasi pengingat otomatis berbasis Flutter yang dirancang untuk membantu pengguna mengatur jadwal, tugas, dan aktivitas harian dengan cepat dan efisien.
 
-## ✨ Fitur Utama
+Aplikasi ini dibuat agar pengguna tetap produktif dan tidak melewatkan momen penting, dengan sistem notifikasi yang stabil, tampilan modern, dan navigasi yang mudah.
 
-### 🔔 Smart Local Notification  
-- Pengingat otomatis menggunakan `flutter_local_notifications`
-- Mendukung notifikasi terjadwal (daily / sekali)
-- Notifikasi tetap berjalan meski aplikasi ditutup
+AURA sangat cocok digunakan untuk mahasiswa, pekerja, atau siapa pun yang membutuhkan pengingat otomatis yang rapi dan terpercaya.
 
-### 🎨 UI Modern & Clean  
-- Menggunakan font **Cinzel** & **Montserrat**  
-- Mode terang & gelap (Light/Dark Mode)
 
-### 🧠 Manajemen Jadwal yang Mudah  
-- Tambah, edit, dan hapus pengingat  
-- Data tersimpan lokal menggunakan **SQLite (sqflite)**  
-- Navigasi cepat dan responsif
+✨ Fitur Utama AURA
 
-### 📱 Optimal untuk Android  
-- Kompatibel Android 12 – Android 14  
-- Desugaring Java 8+ untuk performa maksimal
+🔔 Notifikasi terjadwal (menggunakan flutter_local_notifications)
 
----
+🎨 Tampilan UI bersih, modern, dan responsif
 
-## 📁 Teknologi yang Digunakan
+🌓 Dukungan Dark Mode & Light Mode
 
-| Teknologi | Keterangan |
-|----------|------------|
-| Flutter 3.x | Framework utama |
-| Dart | Bahasa pemrograman |
-| flutter_local_notifications | Sistem notifikasi |
-| sqflite | Database lokal |
-| shared_preferences | Menyimpan preferensi UI |
-| permission_handler | Meminta izin perangkat |
-| timezone | Akurasi penjadwalan notifikasi |
+🧠 Manajemen jadwal: Tambah, hapus, edit pengingat
 
----
+💾 Penyimpanan lokal dengan SQLite (sqflite)
 
-## 🔧 Instalasi & Menjalankan Project
+🔐 Permission otomatis untuk notifikasi & alarm
 
-Ikuti langkah-langkah berikut untuk meng-clone dan menjalankan AURA secara lokal.
+📱 Optimal untuk Android 12 – 14 (SDK 36 ready)
 
-### 1️⃣ Clone Repository  
-```bash
+
+
+
+🛠 Cara Clone & Menjalankan Project AURA (Step-by-step dari Nol)
+
+
+1️⃣ Download & Install Flutter
+
+Download Flutter SDK versi terbaru:
+
+👉 https://docs.flutter.dev/get-started/install
+
+Setelah download, extract Flutter ke lokasi yang kamu mau.
+Tambahkan ke PATH (Windows):
+
+C:\src\flutter\bin
+
+
+Cek apakah sudah terinstall:
+
+flutter --version
+
+
+2️⃣ Install Android Studio
+
+Download Android Studio:
+👉 https://developer.android.com/studio
+
+Setelah terinstall:
+
+Buka SDK Manager
+
+Install:
+
+Android SDK 36
+
+Android SDK Build-Tools
+
+Android Platform-Tools
+
+Android Emulator (opsional)
+
+
+3️⃣ Clone Repository AURA
+
+Jalankan perintah berikut:
+
 git clone https://github.com/Reinerbroww/AURA-Auto-Reminder-Aplication-.git
 
 
-2️⃣ Masuk ke Folder Project
+Masuk ke folder project:
+
 cd AURA-Auto-Reminder-Aplication-
 
-3️⃣ Install Semua Dependency
+
+4️⃣ Install Dependencies Flutter
+
+Jalankan:
+
 flutter pub get
 
-4️⃣ Pastikan Android SDK Sudah Terinstall
 
-Minimal SDK: Android 36
+5️⃣ Update & Sinkronisasi Android SDK
 
-Cek apakah sudah tersedia:
-
-sdkmanager --list
-
-
-Jika belum ada:
+Karena AURA memakai plugin notifikasi baru, pastikan SDK 36 sudah ada:
 
 sdkmanager "platforms;android-36"
 
-5️⃣ Jalankan Aplikasi
+
+6️⃣ Jalankan Aplikasi
+
+Untuk mode debug:
+
 flutter run
 
 
-Jika ingin menjalankan mode release:
+Untuk mode release:
 
 flutter run --release
 
-📂 Struktur Folder
-AURA/
-├── android/                # File konfigurasi Android
-├── assets/
-│   ├── fonts/              # Font Cinzel & Montserrat
-│   └── logo_aura.png
-├── lib/
-│   ├── screens/            # Halaman aplikasi (Home, Daftar, Masuk, dll)
-│   ├── services/           # Notifikasi, database, helper
-│   ├── widgets/            # Custom widget
-│   └── main.dart           # Entry point aplikasi
-├── pubspec.yaml            # Dependency project
-└── README.md
+📌 Catatan Penting
 
-👨‍💻 Developer
+Jika ada error Gradle, jalankan:
 
-Reiner Dominicus Sakunab (Reinerbroww)
-AURA — Auto Reminder Application
-Universitas Tadulako | Teknik Informatika
+flutter clean
+flutter pub get
 
-📜 Lisensi (Opsional)
-MIT License  
-Project bebas digunakan untuk pembelajaran & pengembangan.
+
+Jika notifikasi tidak muncul, pastikan:
+
+Izin notifikasi aktif
+
+Battery optimization dimatikan untuk aplikasi
+
+
+👤 Dibuat oleh:
+
+MAIN DEVELOPER:
+Reinnher Sakunab
+
+SUPPORT DEVELOPER:
+Hadynata Yusuf Pratama
+
+Universitas Tadulako — Teknik Informatika
+AURA Auto Reminder App • 2025
