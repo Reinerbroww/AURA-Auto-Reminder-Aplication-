@@ -1,7 +1,7 @@
 # AURA – Auto Reminder Application 🕒
 
 **AURA (Auto Reminder Application)** adalah aplikasi pengingat otomatis berbasis **Flutter** yang membantu pengguna mengatur jadwal, tugas, dan aktivitas harian.
-Tujuan AURA: bikin pengguna **lebih teratur**, **gak lupa jadwal**, dan tetap **produktif** dengan notifikasi yang terjadwal rapi.
+Tujuan AURA: bikin pengguna **lebih teratur**, **gak lupa jadwal**, dan tetap **produktif** dengan notifikasi yang terjadwal rapi
 
 ---
 
